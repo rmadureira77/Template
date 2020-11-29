@@ -34,11 +34,42 @@ function relogio() {
 
 function background() {
     
-    if (horas > 15) {
+    var relogio = new Date()
+
+    var horas = relogio.getHours()
+
+    var bkg = document.querySelector(".corpo1")
+
+    if (horas > 0 && horas <= 6) {
         
         bkg.style.backgroundImage = "url(./images/noite.jpg)"
 
     }
+
+    if (horas > 6 && horas <= 7) {
+        
+        bkg.style.backgroundImage = "url(./images/amanhecer.jpg)"
+
+    }
+    
+    if (horas > 7 &&  horas < 18) {
+        
+        bkg.style.backgroundImage = "url(./images/dia.jpg)"
+
+    }
+    
+    if ( horas >= 18 && horas < 19) {
+        
+        bkg.style.backgroundImage = "url(./images/lusco.jpg)"
+
+    }
+    if (horas >= 19  && horas <= 24) {
+        
+        bkg.style.backgroundImage = "url(./images/noite.jpg)"
+
+    }
+
+    
 
 }
 
