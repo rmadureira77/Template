@@ -38,7 +38,7 @@ function background() {
 
     var horas = relogio.getHours()
 
-    var bkg = document.querySelector(".corpo1")
+    var bkg = document.querySelector("body")
 
     if (horas > 0 && horas <= 6) {
         
