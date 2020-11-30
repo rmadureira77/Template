@@ -6,11 +6,16 @@ function relogio() {
 
     var minutos = relogio.getMinutes()
 
-    var segundos = relogio.getSeconds()
-    
+    var segundos = relogio.getSeconds()    
+
+    var dat = relogio.toLocaleDateString();
+
+   
     var rel = document.getElementById("rel1")
 
-    
+    var data = document.getElementById("dat1")
+
+    data.innerHTML = `${dat}`
 
     if (horas < 10) {
         horas = "0"+horas
